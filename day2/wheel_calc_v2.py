@@ -2,6 +2,10 @@ wheel_radius = 0.15
 circle = 2 * 3.14 * wheel_radius
 count = 0
 
+def new_func(count):
+    count = count + 1
+    return count
+
 while True:
     user_input = input(f"please input speed (m/s),input q will break")
 
@@ -18,4 +22,4 @@ while True:
     else:
         rps = speed/circle
         print(f"speed is {speed},wheel rotation speed is {rps:.2f}")
-    count = count + 1
+    count = new_func(count)
